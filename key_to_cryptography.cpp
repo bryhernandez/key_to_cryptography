@@ -9,6 +9,9 @@ int shift(char x, char y){
 int main() {
   string word;
   string code;
+  
+  cin >> word;
+  cin >> code;
 
   string cypher = "";
 
