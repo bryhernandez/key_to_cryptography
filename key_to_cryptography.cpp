@@ -18,8 +18,7 @@ int main() {
   for(int i = 0; i < word.size(); i ++){
     char letter = shift(word[i], code[i]);
     cypher.push_back(letter);
-    cout << letter;
     code += string(1, letter);
   }
-  cout << endl << cypher;
+  cout << cypher;
 }
