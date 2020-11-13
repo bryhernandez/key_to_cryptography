@@ -9,8 +9,6 @@ int main() {
   cin >> word;
   cin >> code;
 
-  string cypher = "";
-
   for(int i = 0; i < word.size(); i ++){
     int index = i % code.size();
 
@@ -18,7 +16,7 @@ int main() {
 
     if(num >= 26)
       num -= 26;
-    if(num <= 0)
+    if(num < 0)
       num += 26;
 
     word[i] = num + 'A';
